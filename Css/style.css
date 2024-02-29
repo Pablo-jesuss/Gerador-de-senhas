@@ -13,7 +13,7 @@ body {
 }
 
 html {
-  background: linear-gradient(180deg, #cf1b0e 0%, #0097ff 100%);
+  background: linear-gradient(180deg, #850b02 0%, #065183 100%);
 }
 
 input:focus {
@@ -27,4 +27,25 @@ input:focus {
   display: flex;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+  background: url(/image/unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+#banner-layer {
+  background-color: rgba(39, 59, 71, 0.7);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#register-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  word-spacing: 50rem;
 }
