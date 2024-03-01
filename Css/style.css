@@ -77,3 +77,20 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
+}
+
+#generate-password {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
