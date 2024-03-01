@@ -6,14 +6,15 @@
   color: #333;
 }
 
-html,
 body {
-  height: auto;
-  min-height: 100vh;
-}
-
-html {
-  background: linear-gradient(180deg, #850b02 0%, #065183 100%);
+  background-image: url(/image/unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 input:focus {
@@ -30,13 +31,13 @@ input:focus {
 }
 
 #register-banner {
-  background: url(/image/unsplash.jpg);
+  background: url(/image/banner.jpg);
   background-size: cover;
   background-position: center;
   width: 50%;
 }
 #banner-layer {
-  background-color: rgba(39, 59, 71, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -46,6 +47,12 @@ input:focus {
 #register-banner h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #49e419;
   word-spacing: 50rem;
+}
+
+#register-form {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  width: 50%;
 }
