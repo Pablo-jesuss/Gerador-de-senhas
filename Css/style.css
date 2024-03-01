@@ -94,3 +94,24 @@ input:focus {
   cursor: pointer;
   transition: 0.4s;
 }
+
+#generate-password:hover {
+  color: #49e419;
+}
+
+#register-form #generated-password {
+  border: 1px solid #49e419;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#register-form #generated-password p {
+  color: #49e419;
+  margin-bottom: 0.5rem;
+}
