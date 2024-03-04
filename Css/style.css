@@ -54,7 +54,7 @@ input:focus {
 
 #register-form {
   background-color: #fdfdfd;
-  padding: 5rem;
+  padding: 4rem;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -117,9 +117,7 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
-#register-form input[type="submit"],
-#generate-options button,
-#copy-password {
+#register-form input[type="submit"] {
   background-color: #49e419;
   color: #fff;
   opacity: 0.7;
@@ -153,8 +151,49 @@ input:focus {
   font-size: 0.8rem;
 }
 
-#generate-options input [type="text"] {
+#generate-options input[type="text"] {
   max-width: 30px;
   text-align: center;
   border: 1px solid #ccc;
+}
+
+#generate-options button {
+  background-color: #49e419;
+  display: block;
+  margin: 0 auto;
+}
+
+#generate-options button {
+  margin: 1rem auto;
+  background-color: transparent;
+  border: 2px solid #81d340;
+  color: #81d340;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#generate-options button:hover {
+  color: #49e419;
+  border: 2px solid #49e419;
+}
+
+#copy-password {
+  margin: 1rem auto;
+  background-color: transparent;
+  border: 2px solid #81d340;
+  color: #81d340;
+
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#copy-password:hover {
+  color: #49e419;
+  border: 2px solid #49e419;
+}
+
+.hide {
+  display: none;
 }
