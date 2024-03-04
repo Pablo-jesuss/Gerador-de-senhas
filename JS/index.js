@@ -44,6 +44,11 @@ const generatePassword = (
       password += randomValue;
     });
   }
+
+  password = password.slice(0, passwordLength);
+
+  generatedPasswordElement.style.display = "block";
+  generatedPasswordElement.querySelector("h4").innerText = password;
 };
 // Eventos
 generatePasswordButton.addEventListener("click", () => {
