@@ -100,6 +100,11 @@ input:focus {
   color: #49e419;
 }
 
+#open-generate-password {
+  color: #49e419;
+  cursor: pointer;
+}
+
 #register-form #generated-password {
   border: 1px solid #49e419;
   border-radius: 4px;

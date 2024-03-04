@@ -1,6 +1,16 @@
 // Seleção de elementos
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
+const openCloseGeneratorButton = document.querySelector(
+  "#open-generate-options"
+);
+const generatePasswordContainer = document.querySelector("#generate-options");
+const lengthInput = document.querySelector("#length");
+const lattersInput = document.querySelector("#letters");
+const numbersInput = document.querySelector("#numbers");
+const symbolsInput = document.querySelector("#symbols");
+const copyPasswordButton = document.querySelector("#copy-password");
+
 // Funções
 const getLetterLowerCase = () => {
   return String.fromCodePoint(Math.floor(Math.random() * 26) + 97);
