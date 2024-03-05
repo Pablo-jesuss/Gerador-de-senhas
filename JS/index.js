@@ -6,7 +6,7 @@ const openCloseGeneratorButton = document.querySelector(
 );
 const generatePasswordContainer = document.querySelector("#generate-options");
 const lengthInput = document.querySelector("#length");
-const lattersInput = document.querySelector("#letters");
+const lettersInput = document.querySelector("#letters");
 const numbersInput = document.querySelector("#numbers");
 const symbolsInput = document.querySelector("#symbols");
 const copyPasswordButton = document.querySelector("#copy-password");
@@ -37,11 +37,11 @@ const generatePassword = (
 ) => {
   let password = "";
 
-  const passwordLength = lengthInput.value;
+  const passwordLength = +lengthInput.value;
 
   const generators = [];
 
-  if (lengthInput.checked) {
+  if (lettersInput.checked) {
     generators.push(getLetterLowerCase, getLetterUpperCase);
   }
 
@@ -57,7 +57,7 @@ const generatePassword = (
     return;
   }
 
-  for (i = 0; i < passwordLength; i = i + 4) {
+  for (i = 0; i < passwordLength; i = i + generators.length) {
     generators.forEach(() => {
       const randomValue =
         generators[Math.floor(Math.random() * generators.length)]();
