@@ -37,14 +37,25 @@ const generatePassword = (
 ) => {
   let password = "";
 
-  const passwordLength = 10;
+  const passwordLength = lengthInput.value;
 
-  const generators = [
-    getLetterLowerCase,
-    getLetterUpperCase,
-    getNumber,
-    getSymbol,
-  ];
+  const generators = [];
+
+  if (lengthInput.checked) {
+    generators.push(getLetterLowerCase, getLetterUpperCase);
+  }
+
+  if (numbersInput.checked) {
+    generators.push(getNumber);
+  }
+
+  if (symbolsInput.checked) {
+    generators.push(getSymbol);
+  }
+
+  if (generators.length === 0) {
+    return;
+  }
 
   for (i = 0; i < passwordLength; i = i + 4) {
     generators.forEach(() => {
