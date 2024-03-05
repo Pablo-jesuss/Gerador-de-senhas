@@ -2,7 +2,7 @@
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
 const openCloseGeneratorButton = document.querySelector(
-  "#open-generate-options"
+  "#open-generate-password"
 );
 const generatePasswordContainer = document.querySelector("#generate-options");
 const lengthInput = document.querySelector("#length");
@@ -68,4 +68,8 @@ generatePasswordButton.addEventListener("click", () => {
     getNumber,
     getSymbol
   );
+});
+
+openCloseGeneratorButton.addEventListener("click", () => {
+  generatePasswordContainer.classList.toggle("hide");
 });
