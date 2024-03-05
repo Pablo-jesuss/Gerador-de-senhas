@@ -202,3 +202,57 @@ input:focus {
 .hide {
   display: none;
 }
+
+@media (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+
+  #register-container {
+    flex-direction: column;
+  }
+
+  #register-banner,
+  #register-form {
+    width: 100%;
+  }
+
+  #register-banner {
+    order: 2;
+  }
+
+  #banner-layer {
+    padding: 1rem;
+  }
+
+  #register-form {
+    padding: 2rem;
+  }
+
+  #register-form h2,
+  #register-form p {
+    text-align: left;
+  }
+
+  .form-control input {
+    max-width: 100%;
+  }
+
+  #generate-options {
+    padding: 0.5rem;
+  }
+
+  #generate-options input[type="text"] {
+    max-width: 100%;
+  }
+
+  #generate-options button {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 420px) {
+  #register-banner {
+    display: none;
+  }
+}
